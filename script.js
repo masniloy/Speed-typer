@@ -100,7 +100,7 @@ const closeModal = () => {
 };
 
 const start = () => {
-  console.log("start working!");
+
   // If already started, do not start again
   if (startTime) return;
 
@@ -110,12 +110,20 @@ const start = () => {
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
-    if (count === 0) {
-      clearInterval(count);
-    }
+
 
     // finished timer
-    if (count <= 0) {
+    if (count === 0) {
+      console.log("start working!");
+
+      if (count <= 0) {
+        console.log("start working!");
+        countdownOverlay.innerHTML = "";
+        // countdownOverlay.style.backgroundColor = "unset";
+        // countdownOverlay.style.backgroundColor = "unset";
+        countdownOverlay.style.height = "0%";
+        countdownOverlay.style.width = "0%";
+      }
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
