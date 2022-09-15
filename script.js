@@ -119,9 +119,8 @@ const start = () => {
         console.log("start working!");
         countdownOverlay.innerHTML = "";
         countdownOverlay.style.backgroundColor = "unset";
-        countdownOverlay.style.height = "0px";
-        countdownOverlay.style.width = "0px";
-        countdownOverlay.style.fontSize = "0px";
+        countdownOverlay.style.height = "270px";
+        countdownOverlay.style.width = "200px";
       }
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
