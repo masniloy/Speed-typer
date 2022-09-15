@@ -110,19 +110,17 @@ const start = () => {
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
-
-
     // finished timer
-    if (count === 0) {
+    if (count === -1) {
       console.log("start working!");
 
       if (count <= 0) {
         console.log("start working!");
         countdownOverlay.innerHTML = "";
-        // countdownOverlay.style.backgroundColor = "unset";
-        // countdownOverlay.style.backgroundColor = "unset";
-        countdownOverlay.style.height = "0%";
-        countdownOverlay.style.width = "0%";
+
+        countdownOverlay.style.backgroundColor = "unset";
+        // countdownOverlay.style.height = "0%";
+        // countdownOverlay.style.width = "0%";
       }
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
