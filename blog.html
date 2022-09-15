@@ -7,13 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Ami jani na</h1>
+    <h1 class="blogs">Blogs</h1>
+    <section class="blogs">
+        <section>
+            <div class="blog">
+                <h2># Difference between local storage and session storage.</h2>
+                <p>SessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't
+                    expire,
+                    data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a
+                    particular
+                    tab in the browser, a unique page session gets created and assigned to that particular tab.</p>
+            </div>
+            <div class="blog">
+                <h2># Difference between global scope and local scope.</h2>
+                <p>A global variable has global scope. A global variable is accessible from anywhere in the code. Local
+                    Scope — Local scope contains things defined inside code blocks. A local variable has local scope.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="blog">
+                <h2># How event loop works in javascript.</h2>
+                <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call
+                    Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call
+                    Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+            </div>
+            <div class="blog">
+                <h2># Datatype: undefined
+                </h2>
+                <p>* A variable in JavaScript that is without any value has a value of undefined. The datatype of a
+                    variable that holds an undefined value is also 'undefined'.
+                    <br>* You can also empty an existing variable that has some existing value by setting its value as
+                    undefined.
+                    <br> * You should know that an empty string is different from an undefined value!
+                </p>
+            </div>
+        </section>
+    </section>
 
 
     <script src="styles.css"></script>
